@@ -57,7 +57,8 @@ export default function Newsletter() {
         {/* reCAPTCHA */}
         <div className="flex justify-center mt-6">
           <ReCAPTCHA
-            sitekey="6LcBI8ArAAAAADzj5Li9mgneqNLbz879wvn6ex57"
+            sitekey="6LeBRcArAAAAAF37ENfHijKh9_ItsqOSr3Hn9A2u
+"
             onChange={(value) => setCaptcha(value)}
           />
         </div>

@@ -1,0 +1,76 @@
+.imageTemplateContainer {
+ 
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+  
+  z-index: 2000;
+}
+.imageTemplateContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;   /* upar se align ho */
+  justify-content: flex-start; /* hamesha left me start ho */
+  z-index: 2000;
+}
+
+
+
+
+
+/* Left Menu */
+.imageTemplateMenu {
+  width: 220px;
+  
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.imageTemplateMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imageTemplateMenu li {
+  margin: 12px 0;
+}
+
+.imageTemplateMenu a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.imageTemplateMenu a:hover {
+  color: #c45c00; /* hover pe orange look */
+  font-weight: 500;
+}
+
+/* Right Images */
+.imageTemplateImages {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.imageTemplateImages img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.imageTemplateImages img:hover {
+  transform: scale(1.05);
+}

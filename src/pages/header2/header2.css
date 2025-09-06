@@ -1,0 +1,202 @@
+.headerConatainer1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  border-bottom: 1px solid silver;
+  padding: 0 15px;
+}
+
+.headerConatainer1 div:nth-child(1) {
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+
+.headerConatainer1 div:nth-child(1) p:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333;
+}
+
+.hedding {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.headerConatainer1 div:nth-child(2) {
+  height: 100px;
+  display: flex;
+}
+
+.headerConatainer1 div:nth-child(2) img {
+  height: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.headerConatainer1 div:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ✅ Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .headerConatainer1 {
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+  }
+
+  .headerConatainer1 div:nth-child(1) {
+    width: auto;
+    gap: 8px;
+  }
+
+  .headerConatainer1 div:nth-child(2) img {
+    height: 80px;
+  }
+
+  .headerConatainer1 div:nth-child(3) {
+    gap: 8px;
+  }
+}
+
+/* ✅ Mobile (≤768px) */
+@media (max-width: 768px) {
+  .headerConatainer1 {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .headerConatainer1 div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .headerConatainer1 div:nth-child(2) {
+    justify-content: center;
+  }
+
+  .headerConatainer1 div:nth-child(2) img {
+    height: 60px;
+    padding: 5px;
+  }
+
+  .hedding {
+    font-size: 14px;
+  }
+
+  .headerConatainer1 div:nth-child(3) {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
+/* ✅ Very Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .headerConatainer1 {
+    gap: 10px;
+  }
+
+  .headerConatainer1 div:nth-child(1),
+  .headerConatainer1 div:nth-child(3) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .headerConatainer1 div:nth-child(2) img {
+    height: 50px;
+  }
+
+  .hedding {
+    font-size: 13px;
+  }
+}
+
+/* Default (desktop/laptop) styling same rahegi */
+
+/* ✅ Mobile view */
+@media (max-width: 768px) {
+  .headerConatainer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  /* Pehla column (About Us, Store Locations) hide */
+  .headerConatainer1 div:nth-child(1) {
+    display: none;
+  }
+
+  /* Logo center me */
+  .headerConatainer1 div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .headerConatainer1 div:nth-child(2) img {
+    height: 50px;
+    padding: 0;
+  }
+
+  /* Last column me sirf Sign In aur Bag dikhe */
+  .headerConatainer1 div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* "Create an Account" hide kar dena */
+  .headerConatainer1 div:nth-child(3) p:nth-child(1) {
+    display: none;
+  }
+
+  /* "Sign In Namaste!" chhota aur simple */
+  .headerConatainer1 div:nth-child(3) p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+/* By default: cart dikhe, mobile search hide ho */
+.cartIcon {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.mobileSearchIcon {
+  display: none;
+  font-size: 20px;
+}
+
+/* Mobile screen par */
+@media (max-width: 768px) {
+  .cartIcon {
+    display: none; /* cart gayab */
+  }
+  .mobileSearchIcon {
+    display: inline-block; /* search icon dikhe */
+  }
+}
+

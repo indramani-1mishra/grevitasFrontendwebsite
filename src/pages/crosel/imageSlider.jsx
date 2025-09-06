@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 
 const images = [
   '/pictures/banner1.jpg',
-  '/pictures/banner2.png',
+  '/pictures/banner2.jpg',
   '/pictures/banner3.jpg',
   '/pictures/banner1.jpg',
-  '/pictures/banner1.jpg',
+  '/pictures/banner4.jpg',
 ];
 
 export default function ImageSlider() {
@@ -23,7 +23,7 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="w-full h-[300px] overflow-hidden relative top-[90px]">
+    <div className="w-full h-[500px] overflow-hidden relative top-[15px]">
       <img
         src={images[currentIndex]} 
         alt="slider" 

@@ -1,0 +1,75 @@
+/* Productcard.css */
+
+.productCartContainer {
+  width: 260px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  margin: 15px;
+}
+
+.productCartContainer:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.productCartContainer img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.productCartContainer span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  color: #444;
+  cursor: pointer;
+}
+
+.productCartContainer p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.productCartContainer p:first-of-type {
+  font-weight: bold;
+  font-size: 15px;
+  color: #222;
+  min-height: 40px;
+}
+
+.productCartContainer p:nth-of-type(3) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.productCartContainer p span {
+  margin: 0 3px;
+  font-size: 13px;
+  color: #666;
+}
+
+.productCartContainer button {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.productCartContainer button:hover {
+  background: #444;
+}

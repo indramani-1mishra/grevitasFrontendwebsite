@@ -1,8 +1,9 @@
 .inputContainer {
     position: absolute;
-    top: 100px;
-    float:right;
-    right: 20px;
+    top: 120px;
+    left: 10%;
+    right: auto;
+    
   display: flex;
   align-items: center;
   background-color: white;
@@ -11,7 +12,8 @@
   padding: 6px 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: fit-content;
-  width: 400px;
+  width: 80%;
+  z-index: 2000;
 }
 
 .inputContainer input {
@@ -19,7 +21,7 @@
   outline: none;
   font-size: 15px;
   padding: 8px;
-  width: 370px;
+  width: 98%;
   
   border-radius: 25px;
   background-color: transparent;

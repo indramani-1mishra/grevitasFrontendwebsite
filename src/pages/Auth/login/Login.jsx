@@ -16,7 +16,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-[300px] bg-white shadow-lg rounded-lg p-6 text-center space-y-4 absolute top-[90px]  right-[10px] float-right transition-all duration-300 ease-in-out  "
+    <div className="w-[300px] bg-white shadow-lg rounded-lg p-6 text-center space-y-4 absolute top-[90px]  right-[10px] float-right transition-all duration-300 ease-in-out z-[2000] "
       style={{ boxShadow: '0px 0px 6px 0px black' }}>
       <RxCross1 style={{cursor:"pointer", color:"red",}} onClick={()=>setshowLogin(false)}/>
       <h2 className="text-xl font-semibold text-gray-800">LOGIN NOW</h2>
